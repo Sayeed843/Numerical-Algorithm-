@@ -6,6 +6,6 @@ for i=1:10
 xr = (prevXr - (f(prevXr)/fPrime(prevXr)));
 root(i) = xr;
 ea(i) = abs(((xr-prevXr)/xr)*100);
-%fprintf("Root: %f\t ea: %f\n",xr,ea);
 prevXr=xr;
-endfor
+%endfor
+end
